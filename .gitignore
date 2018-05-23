@@ -1,0 +1,17 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+
+/Models
+
+logs/*
+*.log
+
+cache/*
+plugins.php
+.DS_Store
+
+.env
+storage/cachemanager.key
+storage/debugbar

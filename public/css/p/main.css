@@ -1,0 +1,369 @@
+/*
+  YUI 3.14.1 (build 63049cb)
+  Copyright 2013 Yahoo! Inc. All rights reserved.
+  Licensed under the BSD License.
+  http://yuilibrary.com/license/
+  */
+
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+.dl_banner a >img {
+    max-width: 100%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+html {
+    height: 100%;
+}
+body {
+    font-family :"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    color: #666666;
+    background-color: #F4F4F4;
+    size: 15px;
+    text-align: center;
+    padding-top: 45px;
+}
+header {
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #66cccc;
+    display: block;
+    z-index: 100;
+}
+#top-logo {
+    height: 30px;
+    margin: 10px auto;
+}
+#container {
+    background-color: white;
+    margin: 0 auto;
+}
+#content {
+    margin: 10px;
+    text-align: left;
+}
+h2 {
+    font-weight: bold;
+}
+#post-img {
+    width: 100%;
+}
+#user-content {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+#user-img {
+    width: 20%;
+    max-width: 100px;
+    border-radius: 1000px;
+    webkit-border-radius: 1000px;
+    moz-border-radius: 100px;
+    float: left;
+}
+#like-btn {
+    float: right;
+}
+#like-img {
+    width: 30%;
+    float: right;
+}
+.user-detail {
+    float: left;
+    padding-left: 10px;
+    width: 70%;
+}
+.user-name {
+    font-size: 110%;
+    color: #3ad2ce;
+}
+.post-date {
+    font-size: 80%;
+    color: #969696;
+}
+#tags {
+    margin-top: 10px;
+}
+#desc {
+    margin-top: 10px;
+}
+#like-desc {
+    margin-top: 10px;
+}
+.like-num {
+    color: #3ad2ce;
+}
+.appstore {
+    margin: 10px 0 0 0;
+}
+.appstore > img {
+    width: 50%;
+}
+#footer {
+    font-size: 80%;
+    margin-top: 10px;
+}
+#cp {
+    padding: 10px 0;
+    font-size: 30%;
+}
+#footer a:link, a:hover, a:visited, a:active {
+    color: #666666;
+    text-decoration: none;
+}
+#heart{
+    display: inline;
+    vertical-align: middle;
+    height: 3%;
+    max-height: 18px;
+    max-width: 18px;
+    margin: -4px 0 0 3px;
+}
+#sns {
+    text-align: left;
+    margin: 20px 0 20px 10px;
+}
+#sns > a > img {
+    width: 3rem;
+}
+#pops > .caption {
+    text-align: left;
+    margin: 10px;
+}
+#pops > .photos {
+    margin-top: 15px;
+}
+.pop-img {
+    width: 50%;
+    float: left;
+}
+.pop-img:nth-child(2n){
+    text-align: right;
+}
+.pop-img:nth-child(2n+1){
+    text-align: left;
+}
+.pop-img > img {
+    width: 99%;
+}
+
+/* 新着投稿 */
+.latest_articles h2, #pops > h2 {
+    background-color: #efefef;
+    line-height: 2em;
+}
+
+.latest_articles > ul > li {
+    margin: 15px 0;
+}
+.sec-post{ padding: 0px 15px; }
+.thumbnail,
+.wp-post-image{
+    width: 100%;
+    height: auto;
+}
+p.headline{ margin: 0px; }
+.headline-s{
+    text-align: left;
+    padding: 0 0 0 10px;
+    border: none;
+    line-height: 2em;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+.sec-archive {
+    border-bottom: 1px solid #efefef;
+    color: #333;
+}
+.sec-archive a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #333;
+}
+.sec-archive .wp-post-image {
+    float: left;
+    margin: 0px 0px 10px;
+
+    width: 25%;
+    height: auto;
+}
+.sec-archive .post-content {
+    margin: 0px;
+    float: right;
+    width: 70%;
+    text-align: left;
+    font-size: 13px;
+}
+.sec-archive .date {
+    margin: 0px;
+}
+.sec-archive .post-content h3 {
+    margin: 0.5em 0px;
+    padding: 0px 5px 0px 0px;
+    border: none;
+}
+.sec-archive .excerpt {
+    display: none;
+}
+.pr-section {
+    position: relative;
+}
+.pr-section .pr {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 12px;
+}
+
+/* DL link*/
+
+#pops-dl > h2 {
+    background-color: #3ad2ce;
+    line-height: 1.5em;
+    padding: 0.8em 0 0.8em 0;
+    margin-bottom: 1em;
+}
+.headline-m{
+    font-size: 100%;
+    color: #FFFFFF;
+    border: none;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+/*p page*/
+
+#tags a{
+    margin: 2px;
+    display: inline-block;
+    color: #666;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #999;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        text-align: center;
+        padding-top: 55px;
+    }
+    header {
+        height: 55px;
+    }
+    #top-logo {
+        height: 35px;
+    }
+    #container {
+        width: 550px;
+    }
+    #content {
+        text-align: left;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    .appstore {
+        margin: 10px 0 0 0;
+    }
+    #tags {
+        margin: 20px 0;
+    }
+    #desc {
+        margin: 20px 0;
+    }
+    #cp {
+        padding: 10px 0 20px 0;
+    }
+    #sns > a > img {
+        width: 4rem;
+    }
+    .post-content {
+        font-size: 14px;
+    }
+    .post-content .title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .sec-archive .excerpt {
+        display: initial;
+    }
+    .excerpt > p {
+        margin-bottom: 15px;
+    }
+    .headline-m{
+        font-size: 150%;
+    }
+}
+
+.User-Reserves {
+    margin: 14px 0;
+    text-align: center;
+}
+.User-Reserves .User-Reserve-Button {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #6cc;
+    padding: 8px 8px;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: .9em;
+    width: 42%;
+    box-sizing: border-box;
+}
+.User-Reserve-Button:only-child {
+    width: 100%;
+    margin: 0;
+}
+@media (max-width: 420px) {
+    .User-Reserves .User-Reserve-Button {
+        display: inline-block;
+        margin: 0 2px;
+        background-color: #6cc;
+        padding: 8px 4px;
+        color: #fff;
+        border-radius: 2px;
+        text-decoration: none;
+        font-size: .6em;
+        width: 47%;
+    }
+    .User-Reserves .User-Reserve-Button:only-child {
+        width: 100%;
+        margin: 0;
+        font-size: .9em;
+    }
+}
+.Icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    margin-right: 6px;
+}
+.Icon-Global {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAVFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////9FDDDEAAAAG3RSTlMAQPBQIGDvEIDAzzCfkOC/39Bwf7Cgr18/b4+k5Fz9AAAChElEQVR4AZ3XhZL0KhQE4EbCAeIysn+//3vezFI7EiGZ+5WO0Fhh2GPv47WNnMW2Gu+Cr5T/Il903ZBxLHGS3Dq+8wJMZM94ExyT0XE29fqiOQsWwEhtAFGCQzeXasWsIBkFkCt7wSm25a/OAPZWceY6ko3gFOP4J3acFcr7QikAp+bhHxdqPJGscKBior0aAvsQguCpOE5I5cM0CBbsTVJCnS8/DTvTZOhMShDsKg121aRPvRjwv0TSjRbWccL3yrHlpIqakTODr3mmDlilNMkipd7vP2P1PswWexRJ9criT+rTZ3N6g4zSCH6J5qzCwKRDgiLa5yZSIqPgg3Nk4pF0dO0DZxHHCU9ONr4dTic8hzSuU88mtJhZfroiy/GdBTBwQWFHeZ335/WCj1zw2GQrrgVAuOTPFU8AdSrAOm5T8GcCJHKHx3Qm4Mo9EwKXoqx3lF1hHbDePBVzAY5rBf7cKpttADtwg7P4JR3J69gxA9wSoSxmbIJmHripVhfMakFgHhpuin+rMjBL7//hn8VD6ZkTcOGu7vpTpi0ghIbbJnhmVQBKPCjfc83D8DjhyQYuGAgPXG+CJ1m2QoCeRxRepOG7Pq2UvIB3Zb/c0srzDUgGzacSs+Z8AxJ5Tn2TEpk1YK1s3n8TzZxOsCKODzr9BM8sjxX//OVME5xkGpAUXzbBLzcuBOZ0+GTX02M1c0p8SLOoLd4Y5vitTdqc2vqTiJdbuzMwF2YIkEjH5IKVifvwp9gvD1xOLIc2Uz4zDn4xgR47jM4vaLlypg122cAtH0+qIMgpNFfCW/VNgQPiVxHhWb32gmMyNOsAIdkXOKuse744AKb3Jb4ixk+h4awJyPgPHfHTB8cQ0uMAAAAASUVORK5CYII=");
+}
+.Icon-Tel {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAATlBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////82gLR5AAAAGXRSTlMAwNAwQM/woBCfIL/fcIDvYH+wkI+vUF/gwIfErAAAAS1JREFUeAGtlseygzAUxUyw6b3r/3/0jTcppN45T3sJCAdP3B1j049OoAToRB8q0ScXfahEn1X0wYs+teiDF31q0YfN4nueaZyBiRcMhkCPeAu8pFUDvRCwbiHhJYP2FizfZMsrZmFI5lMlE303ib4bOJE4I5n5BzyR80hwRlLzCl+MUTsU/b/fQpBvoVNfBKmzUWU80hTORof6M1w4UVrXlKmFFrWQqIUiUwsetTDwRHjcw17Xq7cMEpq7TRaByFqZCownHxjf7rS48EzwJx+azVSgrB78SF2ZCoQlcGIpDIWX9LtaoE7VAotc6F4Xcn6lNyzqJYfhu3hJZziirP9EikTyI63kR9JE8iNtpvlxEpp/fg67H/GT5EeqOZP8yJZnkh/x7ZwckOXe3fgDe4yIOD+aa6MAAAAASUVORK5CYII=");
+}
